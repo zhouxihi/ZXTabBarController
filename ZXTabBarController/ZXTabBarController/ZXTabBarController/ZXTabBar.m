@@ -37,6 +37,10 @@
         [btn addTarget:self action:@selector(plusBtnClick)
       forControlEvents:UIControlEventTouchUpInside];
         
+        //设置TabBar背景颜色和去除TabBar阴影
+        [[UITabBar appearance] setShadowImage:[UIImage new]];
+        [[UITabBar appearance] setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]]];
+        
         plusBtn = btn;
         [self addSubview:plusBtn];
     }
